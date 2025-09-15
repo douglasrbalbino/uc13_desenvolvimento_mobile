@@ -27,7 +27,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Padding(
-        padding: const EdgeInsets.only(left: 50, top: 50),
+        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -57,6 +57,27 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text("meunomeehronaldo@gmail.com"),
             SizedBox(height: 20),
+            Container(
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.grey),
+                borderRadius: BorderRadius.circular(5),
+              ),
+              height: 250,
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+              child: Scrollbar(
+                thumbVisibility: true,
+                child: SingleChildScrollView(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: Text(
+                      textAlign: TextAlign.justify,
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum velit vel justo facilisis tincidunt. Aliquam sit amet gravida nisi, ut mollis dolor. In maximus sed risus at fringilla. Vivamus vulputate, nibh et sollicitudin semper, arcu felis ultrices quam, vel facilisis sem dui quis mi. |nFusce feugiat vehicula diam, malesuada porta dolor bibendum eu. Fusce mattis neque elementum commodo ornare. Cras volutpat purus a ullamcorper rutrum. Maecenas nunc metus, efficitur at nulla sed, aliquam pellentesque tortor. Integer dapibus ligula lacinia, congue elit non, mollis elit.\n\n Praesent convallis, quam a lobortis accumsan, neque velit pretium massa, a dapibus tellus ex non ligula. Sed cursus erat eros, sit amet viverra tortor aliquam sit amet. Vivamus vulputate, enim vestibulum commodo volutpat, ante erat scelerisque est, ac euismod risus erat molestie lacus. Etiam mollis augue finibus ante cursus, non ornare augue pulvinar. Integer blandit tellus orci, at hendrerit odio condimentum ut. Proin ac urna enim. Curabitur vel elementum sem. Pellentesque hendrerit nulla ligula, a fermentum ligula luctus ut. Vivamus ultrices tellus sit amet egestas fringilla. Nullam elementum justo dui, eu aliquam orci facilisis sed. Aenean sed porttitor est, eu ultricies mauris.",
+                    ),
+                  ),
+                ),
+              ),
+            ),
+ 
           ],
         ),
       ),
